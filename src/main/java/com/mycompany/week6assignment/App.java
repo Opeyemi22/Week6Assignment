@@ -34,11 +34,45 @@ public class App extends Application {
         
         // Rectangle Beneath The Roof 
         
-        Rectangle rect3 = new Rectangle(150,200,500,70); 
+        Rectangle rect3 = new Rectangle(150,200,500,50); 
         rect3.setFill(Color.WHITE); 
         
+        // Brown Square Block (House Block) 
         
-        Group sp = new Group(rect,rect1,lnl1,lnl2,lnl3,lnl4,rect3);
+        Rectangle rect4 = new Rectangle(150,250,500,350);
+        rect4.setFill(Color.BROWN); 
+        
+        // 4 Rectangle Pillars In Front Of House 
+        
+        Rectangle rect5 = new Rectangle(165,250,35,320);
+        rect5.setFill(Color.WHITE); 
+        Rectangle rect6 = new Rectangle(300,250,35,320);
+        rect6.setFill(Color.WHITE); 
+        Rectangle rect7 = new Rectangle(465,250,35,320);
+        rect7.setFill(Color.WHITE); 
+        Rectangle rect8 = new Rectangle(600,250,35,320);
+        rect8.setFill(Color.WHITE); 
+        
+        // 8 Circles On Top Of Pillars 
+        
+        
+        
+        
+        Group sp = new Group(rect,rect1,lnl1,lnl2,lnl3,lnl4,rect3,
+                             rect4,rect5,rect6,rect7,rect8);
+        
+        // For Loop To Create Steps In Front Of House 
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
         var scene = new Scene(sp, 800, 800);
         stage.setScene(scene);
         stage.setTitle("Opeyemi Orioke"); 
