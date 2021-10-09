@@ -4,6 +4,7 @@ import javafx.application.Application;
 import javafx.scene.Group;
 import javafx.scene.Scene;
 import javafx.scene.paint.Color;
+import javafx.scene.shape.Circle;
 import javafx.scene.shape.Line;
 import javafx.scene.shape.Rectangle;
 import javafx.stage.Stage;
@@ -53,21 +54,91 @@ public class App extends Application {
         Rectangle rect8 = new Rectangle(600,250,35,320);
         rect8.setFill(Color.WHITE); 
         
-        // 8 Circles On Top Of Pillars 
+        // Grey Rectangle Box 
+        
+        Rectangle rect9 = new Rectangle(362,270,75,55);
+        rect9.setFill(Color.GREY); 
         
         
+         // 8 Circles On Top Of Pillars 
+        
+        Circle circ1 = new Circle(165,265,13);
+        circ1.setFill(Color.BLACK); 
+        Circle circ2 = new Circle(200,265,13);
+        Circle circ3 = new Circle(300,265,13);
+        Circle circ4 = new Circle(335,265,13);
+        Circle circ5 = new Circle(465,265,13);
+        Circle circ6 = new Circle(500,265,13);
+        Circle circ7 = new Circle(600,265,13);
+        Circle circ8 = new Circle(635,265,13);
+        
+        // 3 Doors With Black Boxes In Them; 
+        
+        Rectangle rect10 = new Rectangle(212,400,75,170);
+        rect10.setFill(Color.WHITE); 
+        
+        Rectangle bb1 = new Rectangle(215,405,25,20); 
+        bb1.setFill(Color.BLACK); 
+        Rectangle bb2 = new Rectangle(255,405,25,20); 
+        Rectangle bb3 = new Rectangle(215,430,25,20); 
+        Rectangle bb4 = new Rectangle(255,430,25,20); 
+        Rectangle bb5 = new Rectangle(); 
+        Rectangle bb6 = new Rectangle(); 
+        Rectangle bb7 = new Rectangle(); 
+        Rectangle bb8 = new Rectangle(); 
+        Rectangle bb9 = new Rectangle(); 
+        Rectangle bb10 = new Rectangle(); 
+        
+        Rectangle rect11 = new Rectangle(362,380,75,190);
+        rect11.setFill(Color.WHITE); 
+        
+        Rectangle bb11 = new Rectangle(); 
+        Rectangle bb12 = new Rectangle(); 
+        Rectangle bb13 = new Rectangle(); 
+        Rectangle bb14 = new Rectangle(); 
+        Rectangle bb15 = new Rectangle(); 
+        Rectangle bb16 = new Rectangle(); 
+        Rectangle bb17 = new Rectangle(); 
+        Rectangle bb18 = new Rectangle(); 
+        Rectangle bb19 = new Rectangle(); 
+        Rectangle bb20 = new Rectangle(); 
+        
+        Rectangle rect12 = new Rectangle(512,400,75,170);
+        rect12.setFill(Color.WHITE); 
+        
+        Rectangle bb21 = new Rectangle(); 
+        Rectangle bb22 = new Rectangle(); 
+        Rectangle bb23 = new Rectangle(); 
+        Rectangle bb24 = new Rectangle(); 
+        Rectangle bb25 = new Rectangle(); 
+        Rectangle bb26 = new Rectangle(); 
+        Rectangle bb27 = new Rectangle(); 
+        Rectangle bb28 = new Rectangle(); 
+        Rectangle bb29 = new Rectangle(); 
+        Rectangle bb30 = new Rectangle(); 
         
         
-        Group sp = new Group(rect,rect1,lnl1,lnl2,lnl3,lnl4,rect3,
-                             rect4,rect5,rect6,rect7,rect8);
+         Group sp = new Group(rect,rect1,lnl1,lnl2,lnl3,lnl4,rect3,rect4,rect5,rect6,rect7,rect8,rect9,rect10,rect11,rect12,circ1,circ2,circ3,circ4,
+                              circ5,circ6,circ7,circ8,bb1,bb2,bb3,bb4);
+         
+       
+        
+ 
         
         // For Loop To Create Steps In Front Of House 
         
         
+        /*  for(int i=0; i < 8; i++){
+        
+            circles[i] = new Circle(); 
+            circles[i].setLayoutX(165 + i); 
+            circles[i].setLayoutY(165 + i); 
+            sp.getChildren().add(circles[i]); 
+      
+        }
         
         
-        
-        
+        */
         
         
         
