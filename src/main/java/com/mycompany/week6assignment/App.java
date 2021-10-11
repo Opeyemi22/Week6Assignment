@@ -45,14 +45,25 @@ public class App extends Application {
         
         // 4 Rectangle Pillars In Front Of House 
         
-        Rectangle rect5 = new Rectangle(165,250,35,320);
+        Rectangle rect5 = new Rectangle(165,250,35,310);
         rect5.setFill(Color.WHITE); 
-        Rectangle rect6 = new Rectangle(300,250,35,320);
+        Rectangle rect6 = new Rectangle(300,250,35,310);
         rect6.setFill(Color.WHITE); 
-        Rectangle rect7 = new Rectangle(465,250,35,320);
+        Rectangle rect7 = new Rectangle(465,250,35,310);
         rect7.setFill(Color.WHITE); 
-        Rectangle rect8 = new Rectangle(600,250,35,320);
+        Rectangle rect8 = new Rectangle(600,250,35,310);
         rect8.setFill(Color.WHITE); 
+        
+        // Small Rectangle Boxes Under Pillars 
+        
+        Rectangle pill1 = new Rectangle(160,560,45,15);
+        pill1.setFill(Color.ORANGE); 
+        Rectangle pill2 = new Rectangle(295,560,45,15);
+        pill2.setFill(Color.ORANGE); 
+        Rectangle pill3 = new Rectangle(460,560,45,15);
+        pill3.setFill(Color.ORANGE); 
+        Rectangle pill4 = new Rectangle(595,560,45,15);
+        pill4.setFill(Color.ORANGE); 
         
         // Grey Rectangle Box 
         
@@ -80,69 +91,65 @@ public class App extends Application {
         Rectangle bb1 = new Rectangle(215,405,25,20); 
         bb1.setFill(Color.BLACK); 
         Rectangle bb2 = new Rectangle(255,405,25,20); 
-        Rectangle bb3 = new Rectangle(215,430,25,20); 
-        Rectangle bb4 = new Rectangle(255,430,25,20); 
-        Rectangle bb5 = new Rectangle(); 
-        Rectangle bb6 = new Rectangle(); 
-        Rectangle bb7 = new Rectangle(); 
-        Rectangle bb8 = new Rectangle(); 
-        Rectangle bb9 = new Rectangle(); 
-        Rectangle bb10 = new Rectangle(); 
+        Rectangle bb3 = new Rectangle(215,435,25,20); 
+        Rectangle bb4 = new Rectangle(255,435,25,20); 
+        Rectangle bb5 = new Rectangle(215,465,25,20); 
+        Rectangle bb6 = new Rectangle(255,465,25,20); 
+        Rectangle bb7 = new Rectangle(215,495,25,20); 
+        Rectangle bb8 = new Rectangle(255,495,25,20); 
+        Rectangle bb9 = new Rectangle(215,525,25,20); 
+        Rectangle bb10 = new Rectangle(255,525,25,20); 
         
         Rectangle rect11 = new Rectangle(362,380,75,190);
         rect11.setFill(Color.WHITE); 
         
-        Rectangle bb11 = new Rectangle(); 
-        Rectangle bb12 = new Rectangle(); 
-        Rectangle bb13 = new Rectangle(); 
-        Rectangle bb14 = new Rectangle(); 
-        Rectangle bb15 = new Rectangle(); 
-        Rectangle bb16 = new Rectangle(); 
-        Rectangle bb17 = new Rectangle(); 
-        Rectangle bb18 = new Rectangle(); 
-        Rectangle bb19 = new Rectangle(); 
-        Rectangle bb20 = new Rectangle(); 
+        Rectangle bb11 = new Rectangle(365,405,25,20); 
+        bb1.setFill(Color.BLACK); 
+        Rectangle bb12 = new Rectangle(405,405,25,20); 
+        Rectangle bb13 = new Rectangle(365,435,25,20); 
+        Rectangle bb14 = new Rectangle(405,435,25,20); 
+        Rectangle bb15 = new Rectangle(365,465,25,20); 
+        Rectangle bb16 = new Rectangle(405,465,25,20); 
+        Rectangle bb17 = new Rectangle(365,495,25,20); 
+        Rectangle bb18 = new Rectangle(405,495,25,20); 
+        Rectangle bb19 = new Rectangle(365,525,25,20); 
+        Rectangle bb20 = new Rectangle(405,525,25,20); 
         
         Rectangle rect12 = new Rectangle(512,400,75,170);
         rect12.setFill(Color.WHITE); 
         
-        Rectangle bb21 = new Rectangle(); 
-        Rectangle bb22 = new Rectangle(); 
-        Rectangle bb23 = new Rectangle(); 
-        Rectangle bb24 = new Rectangle(); 
-        Rectangle bb25 = new Rectangle(); 
-        Rectangle bb26 = new Rectangle(); 
-        Rectangle bb27 = new Rectangle(); 
-        Rectangle bb28 = new Rectangle(); 
-        Rectangle bb29 = new Rectangle(); 
-        Rectangle bb30 = new Rectangle(); 
+        Rectangle bb21 = new Rectangle(515,405,25,20); 
+        bb1.setFill(Color.BLACK); 
+        Rectangle bb22 = new Rectangle(555,405,25,20); 
+        Rectangle bb23 = new Rectangle(515,435,25,20); 
+        Rectangle bb24 = new Rectangle(555,435,25,20); 
+        Rectangle bb25 = new Rectangle(515,465,25,20); 
+        Rectangle bb26 = new Rectangle(555,465,25,20); 
+        Rectangle bb27 = new Rectangle(515,495,25,20); 
+        Rectangle bb28 = new Rectangle(555,495,25,20); 
+        Rectangle bb29 = new Rectangle(515,525,25,20); 
+        Rectangle bb30 = new Rectangle(555,525,25,20); 
         
         
          Group sp = new Group(rect,rect1,lnl1,lnl2,lnl3,lnl4,rect3,rect4,rect5,rect6,rect7,rect8,rect9,rect10,rect11,rect12,circ1,circ2,circ3,circ4,
-                              circ5,circ6,circ7,circ8,bb1,bb2,bb3,bb4);
+                              circ5,circ6,circ7,circ8,pill1,pill2,pill3,pill4,bb1,bb2,bb3,bb4,bb5,bb6,bb7,bb8,bb9,bb10,bb11,bb12,bb13,bb14,bb15,bb16,bb17,bb18,bb19,bb20,bb21,
+                              bb22,bb23,bb24,bb25,bb26,bb27,bb28,bb29,bb30);
          
-       
-        
- 
         
         // For Loop To Create Steps In Front Of House 
+            
+            Rectangle[] rectangle = new Rectangle[11]; 
+            for(int i=0; i < 11; i++){
         
-        
-        /*  for(int i=0; i < 8; i++){
-        
-            circles[i] = new Circle(); 
-            circles[i].setLayoutX(165 + i); 
-            circles[i].setLayoutY(165 + i); 
-            sp.getChildren().add(circles[i]); 
+            rectangle[i] = new Rectangle(); 
+            rectangle[i].setLayoutX(175 + i); 
+            rectangle[i].setLayoutY(575 + i); 
+            sp.getChildren().add(rectangle[i]); 
       
         }
         
         
-        */
-        
-        
-        
-        
+      
         
         var scene = new Scene(sp, 800, 800);
         stage.setScene(scene);
