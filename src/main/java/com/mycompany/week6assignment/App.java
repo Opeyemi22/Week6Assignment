@@ -40,7 +40,7 @@ public class App extends Application {
         
         // Brown Square Block (House Block) 
         
-        Rectangle rect4 = new Rectangle(150,250,500,350);
+        Rectangle rect4 = new Rectangle(150,250,500,400);
         rect4.setFill(Color.BROWN); 
         
         // 4 Rectangle Pillars In Front Of House 
@@ -131,12 +131,43 @@ public class App extends Application {
         Rectangle bb30 = new Rectangle(555,525,25,20); 
         
         
-         Group sp = new Group(rect,rect1,lnl1,lnl2,lnl3,lnl4,rect3,rect4,rect5,rect6,rect7,rect8,rect9,rect10,rect11,rect12,circ1,circ2,circ3,circ4,
-                              circ5,circ6,circ7,circ8,pill1,pill2,pill3,pill4,bb1,bb2,bb3,bb4,bb5,bb6,bb7,bb8,bb9,bb10,bb11,bb12,bb13,bb14,bb15,bb16,bb17,bb18,bb19,bb20,bb21,
-                              bb22,bb23,bb24,bb25,bb26,bb27,bb28,bb29,bb30);
+        // Rectangle Steps (Grey)
+        
+        Rectangle sidestep1 = new Rectangle(150,575,55,5); 
+        sidestep1.setFill(Color.GREY);
+        Rectangle sidestep2 = new Rectangle(595,575,55,5); 
+        sidestep2.setFill(Color.GREY);
+        
+        Rectangle step1 = new Rectangle(205,575,390,10); 
+        step1.setFill(Color.GREY);
+        Rectangle step2 = new Rectangle(195,585,410,10); 
+        step2.setFill(Color.GREY);
+        Rectangle step3 = new Rectangle(185,595,430,10); 
+        step3.setFill(Color.GREY);
+        Rectangle step4 = new Rectangle(175,605,450,10); 
+        step4.setFill(Color.GREY);
+        Rectangle step5 = new Rectangle(165,615,470,10); 
+        step5.setFill(Color.GREY);
+        Rectangle step6 = new Rectangle(155,625,490,10); 
+        step6.setFill(Color.GREY);
+        Rectangle step7 = new Rectangle(145,635,510,10); 
+        step7.setFill(Color.GREY);
+        Rectangle step8 = new Rectangle(135,645,530,10); 
+        step8.setFill(Color.GREY);
+        Rectangle step9 = new Rectangle(125,655,550,10); 
+        step9.setFill(Color.GREY);
+        Rectangle step10 = new Rectangle(115,665,570,10); 
+        step10.setFill(Color.GREY);
+        Rectangle step11 = new Rectangle(105,675,590,10); 
+        step11.setFill(Color.GREY);
+        
+        
+        Group sp = new Group(rect,rect1,lnl1,lnl2,lnl3,lnl4,rect3,rect4,rect5,rect6,rect7,rect8,rect9,rect10,rect11,rect12,circ1,circ2,circ3,circ4,
+                             circ5,circ6,circ7,circ8,pill1,pill2,pill3,pill4,bb1,bb2,bb3,bb4,bb5,bb6,bb7,bb8,bb9,bb10,bb11,bb12,bb13,bb14,bb15,bb16,bb17,bb18,bb19,bb20,bb21,
+                             bb22,bb23,bb24,bb25,bb26,bb27,bb28,bb29,bb30,step1,step2,step3,step4,step5,step6,step7,step8,step9,step10,step11,sidestep1,sidestep2);
          
         
-        // For Loop To Create Steps In Front Of House 
+        /* For Loop To Create Steps In Front Of House 
             
             Rectangle[] rectangle = new Rectangle[11]; 
             for(int i=0; i < 11; i++){
@@ -147,9 +178,8 @@ public class App extends Application {
             sp.getChildren().add(rectangle[i]); 
       
         }
-        
-        
-      
+            
+            */
         
         var scene = new Scene(sp, 800, 800);
         stage.setScene(scene);
